@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Manual CSS input starts here: */
+
+.gridcontainer{
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 4fr 3fr 1fr;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.border{
+    border-style: solid;
+}
+
+#header, #one, #two, #three, #four, #footer{
+    display: flex;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;   
+}
+
+#header, #one, #two{
+    justify-content: space-between;   
+}
+
+#headerlinkcontainer{
+    display: flex;
+}
+
+.toplink{
+    margin-left: 10px;
+    margin-right: 10px;
+    /* font-size: smaller; */
+}
+
+#one{
+    display: flex;
+    align-items: center;   
+}
+
+#awesomewebsitetext, #awesomewebsiteimg{
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 0;
+    width: 0;
+}
+
+#awesomewebsiteimg{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#two{
+    display: flex;
+    justify-content: center;   
+    flex-direction: column;
+}
+
+#blueboxestitle{
+    display: flex;
+    justify-content: center;  
+}
+#blueboxescontainer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center; 
+}
+
+.bluebox{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#three{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+#thorbox{
+    display: flex;
+    flex-direction: column; 
+}
+
+#thorquote{
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+#thorname{
+    align-self: flex-end;
+    padding-right: 50px;
+}
+
+
+#four{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#bluebox{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+#actionwords, #signupbutton{
+    align-self: center;
+}
+
+#footer{
+    justify-content: center;
+}
+
+
+/* colors and font styles */
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.darkbackgroundcolor{
+    background-color: #1F2937;
+}
+
+.heromaintext{
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.herosecondarytextheaderlinktext{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.headerlogotext{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.informationheadertext{
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.quotesectionbackgroundcolor{
+    background-color: #E5E7EB;
+}
+
+.quotetext{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#thorname{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.awesomewebsitetextcontent{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.button{
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+.roundedcorners{
+    border-radius: 8px;
+}
+
+.button2{
+    border: solid;
+}
+
+#four{
+    padding: 60px;
+}
+
+.informationheadertext{
+    margin-bottom: 30px;
+}
+
+#bluebox{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blueborder{
+    border: 5px solid;
+    color: #3882F6;
+}
+
+.bluebutton{
+    height: 20vh;
+    /* overflow: auto; */
+    margin: 10px;
+}
+
+.bluebuttontext{
+    margin: 10px;
+}
+
+.bluebuttoncolor{
+    background-color: #3882F6;
+}
+
+#awesomewebsiteimg{
+    background-color: gray;
+    height: 80%;
+}
